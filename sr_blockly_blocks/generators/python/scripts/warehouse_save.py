@@ -2,6 +2,8 @@
 from moveit_msgs.srv import SaveRobotStateToWarehouse as SaveState
 from sensor_msgs.msg import JointState
 from moveit_msgs.msg import RobotState
+from sr_robot_commander.sr_arm_commander import SrArmCommander
+from sr_robot_commander.sr_hand_commander import SrHandCommander
 from sr_utilities.hand_finder import HandFinder
 
 class SrGraspSaverUnsafe(object):
