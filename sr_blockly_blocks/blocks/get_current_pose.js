@@ -1,6 +1,6 @@
 Blockly.Blocks['get_current_pose'] = {
   init: function() {
-    this.appendValueInput("NAME")
+    this.appendValueInput("commander")
         .setCheck("RobotCommander")
         .appendField("get current pose from commander");
     this.setInputsInline(false);

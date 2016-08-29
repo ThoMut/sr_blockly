@@ -3,7 +3,7 @@ Blockly.Blocks['joints_pose'] = {
     this.appendDummyInput()
         .appendField("Joints pose")
         .appendField(new Blockly.FieldDropdown([["home", "home"], ["pack", "pack"], ["reach", "reach"]]), "joint_pose");
-    this.appendValueInput("NAME")
+    this.appendValueInput("commander")
         .setCheck("Commander")
         .appendField("Commander");
     this.setInputsInline(true);

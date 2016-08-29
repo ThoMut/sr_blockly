@@ -2,18 +2,18 @@ Blockly.Blocks['plan_traj'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Plan");
-    this.appendValueInput("NAME")
+    this.appendValueInput("commander")
         .appendField("  commander")
         .setCheck("RobotCommander")
-    this.appendValueInput("NAME")
+    this.appendValueInput("start")
         .setCheck("Pose")
         .appendField("  start");
-    this.appendValueInput("NAME")
+    this.appendValueInput("goal")
         .setCheck("Pose")
         .appendField("  goal");
     this.appendDummyInput()
         .appendField("  interpolation")
-        .appendField(new Blockly.FieldTextInput("1"), "NAME")
+        .appendField(new Blockly.FieldTextInput("1"), "interpolation")
         .appendField("s");
     this.setInputsInline(true);
     this.setOutput(true, "Trajectory");
