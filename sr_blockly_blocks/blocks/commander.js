@@ -2,9 +2,9 @@
 Blockly.Blocks['commander'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown([["right", "OPTIONNAME"], ["left", "OPTIONNAME"]]), "NAME");
+        .appendField(new Blockly.FieldDropdown([["right", "right"], ["left", "left"]]), "side");
     this.appendDummyInput()
-        .appendField(new Blockly.FieldDropdown([["arm", "OPTIONNAME"], ["hand", "OPTIONNAME"]]), "NAME");
+        .appendField(new Blockly.FieldDropdown([["arm", "arm"], ["hand", "hand"]]), "robot");
     this.appendDummyInput()
         .appendField("commander");
     this.setInputsInline(true);
