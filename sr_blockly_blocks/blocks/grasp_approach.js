@@ -11,7 +11,8 @@ Blockly.Blocks['grasp_approach'] = {
         .setCheck("Commander")
         .appendField("commander");
     this.setOutput(true, "Pose");
-    this.setColour(306);
+    this.setInputsInline(true);
+    this.setColour(290);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }
