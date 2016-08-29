@@ -7,6 +7,7 @@ Blockly.Blocks['play_traj'] = {
         .appendField("trajectory");
     this.setPreviousStatement(true);
     this.setNextStatement(true);
+    this.setInputsInline(true);
     this.setColour(0);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
