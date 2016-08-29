@@ -15,7 +15,7 @@ Blockly.Blocks['plan_traj'] = {
         .appendField("  interpolation")
         .appendField(new Blockly.FieldTextInput("1"), "NAME")
         .appendField("s");
-    this.setInputsInline(false);
+    this.setInputsInline(true);
     this.setOutput(true, "Trajectory");
     this.setColour(0);
     this.setTooltip('');
