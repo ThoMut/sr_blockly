@@ -2,7 +2,7 @@ Blockly.Blocks['joints_pose'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Joints pose")
-        .appendField(new Blockly.FieldDropdown([["home", "OPTIONNAME"], ["pack", "OPTIONNAME"], ["reach", "OPTIONNAME"]]), "NAME");
+        .appendField(new Blockly.FieldDropdown([["home", "home"], ["pack", "pack"], ["reach", "reach"]]), "joint_pose");
     this.appendValueInput("NAME")
         .setCheck("Commander")
         .appendField("Commander");
