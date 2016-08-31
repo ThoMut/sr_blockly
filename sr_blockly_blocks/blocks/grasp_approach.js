@@ -2,14 +2,11 @@ Blockly.Blocks['grasp_approach'] = {
   init: function() {
     this.appendDummyInput()
         .appendField("Extract")
-        .appendField(new Blockly.FieldDropdown([["approach", "approach"], ["final_approach", "final_approach"], ["retreat", "retreat"]]), "grasp_phase")
+        .appendField(new Blockly.FieldDropdown([["hand_pregrasp", "hand_pregrasp"], ["hand_grasp", "hand_grasp"], ["arm_pregrasp", "arm_pregrasp"], ["arm_grasp", "arm_grasp"], ["arm_retreat", "arm_retreat"]]), "grasp_phase")
         .appendField("from");
     this.appendValueInput("grasp")
         .setCheck("Grasp")
         .appendField("grasp");
-    this.appendValueInput("commander")
-        .setCheck("Commander")
-        .appendField("commander");
     this.setOutput(true, "Pose");
     this.setInputsInline(true);
     this.setColour(290);
