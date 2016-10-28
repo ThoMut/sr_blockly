@@ -14,6 +14,9 @@ Blockly.appendToToolbox(`
           <block type="arm_named_pose"></block>
           <block type="arm_joint_target"></block>
         </category>
+        <category name="Robot">
+          <block type="robot_joint_target"></block>
+        </category>
         <category name="Trajectory">
           <block type="trajectory_named_waypoint"></block>
           <block type="trajectory_execute_named_waypoint"></block>
