@@ -1,6 +1,6 @@
 Blockly.Blocks['robot_joint_target'] = {};
 
-function createTrajectoryNamedWaypoint(data) {
+function createNamedJointTarget(data) {
   Blockly.Blocks['robot_joint_target'] = {
     init: function() {
       if ((null != data) && (data.length > 0)) {
@@ -34,8 +34,8 @@ function createTrajectoryNamedWaypoint(data) {
 
 Blockly.waitForComponentToLoad('sr_blockly_blocks', 'get_named_poses', ['ur10srh', 'shadowhand_motor'],
   function (response) {
-    createTrajectoryNamedWaypoint(response);
+    createNamedJointTarget(response);
   },
   function(jqXHR, textStatus, errorThrown) {
-    createTrajectoryNamedWaypoint(null);
+    createNamedJointTarget(null);
   });
