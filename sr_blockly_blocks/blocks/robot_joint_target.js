@@ -17,8 +17,6 @@ function createNamedJointTarget(data) {
       }
 
       this.appendDummyInput()
-        .appendField("Time:")
-        .appendField(new Blockly.FieldTextInput("2"), "time_to_target")
         .appendField("Wait:")
         .appendField(new Blockly.FieldDropdown([["True", "True"], ["False", "False"]]), "wait")
         .appendField("Angle unit:")

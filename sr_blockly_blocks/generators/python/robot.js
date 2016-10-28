@@ -6,7 +6,6 @@ Blockly.Python['robot_joint_target'] = function(block) {
 
   var code = "";
   code += "joint_pose_target = \"" + text_joint_pose_target.toString() + "\"" + "\n";
-  code += "time_to_target = " + text_time_to_target.toString() + "\n";
   code += "wait = " + dropdown_wait.toString() + "\n";
   code += "angle = " + dropdown_angle.toString() + "\n";
 
